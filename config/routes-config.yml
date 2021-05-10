@@ -1,0 +1,21 @@
+default:
+  - headers:
+      key: "Accept"
+      value: "application/json"
+  - withCredentials: false
+services:
+  - serviceKey: "dadJokesService"
+    serviceDescription: "An API for dad jokes"
+    routes:
+      - path: "/dad"
+        method: "GET"
+        target: "https://icanhazdadjoke.com/"
+        enabled: true
+  - serviceKey: "chuckNorrisJokesService"
+    serviceDescription: "An API for Chuck Norris jokes"
+    routes:
+      - path: "/chuck" 
+        method: "GET"
+        target: "https://api.chucknorris.io/jokes/random"
+        enabled: true        
+  
