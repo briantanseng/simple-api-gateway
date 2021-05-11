@@ -1,2 +1,4 @@
 node_modules
 npm-debug.log
+
+./auth/simple-api-gateway.json
