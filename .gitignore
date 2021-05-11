@@ -116,4 +116,4 @@ dist
 .pnp.*
 
 # credentials file for Google Cloud
-./auth/simple-api-gateway.json
+auth/simple-api-gateway.json
