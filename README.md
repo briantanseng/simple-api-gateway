@@ -1,6 +1,6 @@
 # simple-api-gateway
 
-This is a proof of concept for a Node-based API Gateway based on Express.JS
+This is a proof of concept API Gateway based on Express.JS
 
 ![API-Gateway](https://user-images.githubusercontent.com/4847948/117788007-91182e00-b279-11eb-83c7-d545b14e3e0a.jpg)
 

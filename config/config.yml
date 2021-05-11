@@ -1,5 +1,5 @@
 auth:
-  enabled: true
+  enabled: false
 default:
   - headers:
       key: "Accept"
