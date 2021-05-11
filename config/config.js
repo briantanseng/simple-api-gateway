@@ -3,7 +3,7 @@ const fs   = require('fs');
 
 let config = {};
 try {
-    config = yaml.load(fs.readFileSync('./config/routes-config.yml', 'utf8'));
+    config = yaml.load(fs.readFileSync('./config/config.yml', 'utf8'));
     console.info("Configuration loaded");
 } catch (e) {
     console.warn(e);
@@ -35,9 +35,15 @@ function getDefaultSettings() {
     return config.default;
 }
 
+function isAuthEnabled() {
+    return config.auth.enabled;
+}
+
 console.debug("All services:")
 console.debug(getAllServices())
 console.debug("Default:")
 console.debug(getDefaultSettings())
 
-module.exports = { getAllServices, getRoutesByServiceKey, getDefaultSettings }
+console.debug(isAuthEnabled())
+
+module.exports = { getAllServices, getRoutesByServiceKey, getDefaultSettings, isAuthEnabled }

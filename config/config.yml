@@ -1,3 +1,5 @@
+auth:
+  enabled: true
 default:
   - headers:
       key: "Accept"
